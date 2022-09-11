@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>
+      <a href="draw.html">Learn</a>
+      <a href="about.html" class="active">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#signin">Sign in</a>
+      <a href="javascript:void(0);" class="icon" onclick="fafabar()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div id="id01" class="modal">
+      <form id="regForm" action="./smth.php" method="post">
+        <h1 class="formHead">How would you like to learn:<br /></h1>
+
+        <div class="tab">
+          <div class="tabOne">
+            <p>Method:<br /></p>
+            <button
+              class="btn1"
+              type="button"
+              onclick="lightUp1(1)"
+              name="aname"
+            ></button>
+            <button
+              class="btn2"
+              type="button"
+              onclick="lightUp1(2)"
+              name="aname"
+            ></button>
+            <button
+              class="btn3"
+              type="button"
+              onclick="lightUp1(3)"
+              name="aname"
+            ></button>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="tabTwo">
+            <p>Choose the vocabulary:<br /></p>
+            <button
+              class="btn1"
+              type="button"
+              onclick="lightUp2(1)"
+              name="aname"
+            ></button>
+            <button
+              class="btn2"
+              type="button"
+              onclick="lightUp2(2)"
+              name="aname"
+            ></button>
+            <button
+              class="btn3"
+              type="button"
+              onclick="lightUp2(3)"
+              name="aname"
+            ></button>
+          </div>
+        </div>
+
+        <div class="tab">
+          <div class="tabThree">
+            <p>Type:<br /></p>
+            <button
+              class="btn1"
+              type="button"
+              onclick="lightUp3(1)"
+              name="aname"
+            ></button>
+            <button
+              class="btn2"
+              type="button"
+              onclick="lightUp3(2)"
+              name="aname"
+            ></button>
+            <button
+              class="btn3"
+              type="button"
+              onclick="lightUp3(3)"
+              name="aname"
+            ></button>
+          </div>
+        </div>
+
+        <div style="overflow: auto; margin-top: 20px">
+          <div style="float: right">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+              Previous
+            </button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">
+              Next
+            </button>
+          </div>
+        </div>
+
+        <div class="circles">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

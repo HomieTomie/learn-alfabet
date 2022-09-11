@@ -1,0 +1,20 @@
+.donate-now {
+    list-style-type: none;
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+
+.donate-now li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.donate-now label {
+    padding: 5px;
+    border: 1px solid #CCC;
+    cursor: pointer;
+}
+
+.donate-now label:hover {
+    background: #DDD;
+}
